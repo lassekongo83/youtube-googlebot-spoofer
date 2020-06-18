@@ -8,5 +8,5 @@ An extension for Chromium browsers that spoofs the user-agent on youtube.com to 
 - Click to check *Developer mode*.
 - Click *Load unpacked extension...*.
 - In the file selector dialog:
-    - Select the directory `youtube-googlebot-spoofer`.
+    - Select the directory `youtube-googlebot-spoofer` that was cloned/downloaded.
     - Click *Open*.
