@@ -1,0 +1,11 @@
+{
+  "name": "Youtube Googlebot Spoofer",
+  "version": "1.0",
+  "description": "Spoofs the user-agent on youtube.com to googlebot",
+  "permissions": ["webRequest", "webRequestBlocking", "storage", "*://*.youtube.com/*"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "manifest_version": 2
+}
