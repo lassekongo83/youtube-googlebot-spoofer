@@ -1,12 +1,18 @@
 {
   "name": "Youtube Googlebot Spoofer",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Spoofs the user-agent on youtube.com to googlebot",
-  "permissions": ["webRequest", "webRequestBlocking", "storage", "*://*.youtube.com/*"],
+  "permissions": ["webRequest", "webRequestBlocking", "storage", "activeTab", "*://*.youtube.com/*"],
   "background": {
     "scripts": ["background.js"],
     "persistent": true
   },
+  "content_scripts": [
+    {
+      "matches": ["https://*.youtube.com/*"],
+      "js": ["content_script.js"]
+    }
+  ],
   "icons": {
     "16": "images/yt_gb_spoof16.png",
     "32": "images/yt_gb_spoof32.png",
